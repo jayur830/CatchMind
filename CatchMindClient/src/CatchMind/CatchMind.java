@@ -60,8 +60,7 @@ public class CatchMind extends Application implements Initializable {
 
     static DataSendSocket socket;
     public static final String REGEX = "@%#";
-//    public static final String SERVERIP = "127.0.0.1";
-    public static final String SERVERIP = "180.231.115.99";
+    public static final String SERVERIP = "127.0.0.1";
     public static final int TCPSERVERPORT = 32768;
 
     private String answer = null;
