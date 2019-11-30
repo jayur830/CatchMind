@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.canvas.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.canvas.Canvas?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+
+<AnchorPane prefHeight="607.0" prefWidth="801.0" style="-fx-background-color: #eeeeee;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="CatchMind.CatchMind">
+   <children>
+       <Pane layoutX="18.0" layoutY="67.0" prefHeight="305.0" prefWidth="505.0" style="-fx-background-color: #ffffff;">
+           <children>
+               <Canvas fx:id="drawArea" height="305.0" width="505.0">
+                   <cursor>
+                       <Cursor fx:constant="DEFAULT" />
+                   </cursor>
+               </Canvas>
+               <Label fx:id="answerLabel" layoutX="7.0" layoutY="5.0" />
+           </children>
+       </Pane>
+       <TableView fx:id="userTable" layoutX="540.0" layoutY="18.0" prefHeight="571.0" prefWidth="244.0">
+           <columns>
+               <TableColumn fx:id="portColumn" prefWidth="64.0" text="PORT" />
+               <TableColumn fx:id="nickNameColumn" prefWidth="179.0" text="NICKNAME" />
+           </columns>
+       </TableView>
+       <TextArea fx:id="chatLog" editable="false" layoutX="18.0" layoutY="389.0" prefHeight="149.0" prefWidth="505.0" />
+       <Button fx:id="sendButton" layoutX="443.0" layoutY="555.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="80.0" text="Send" />
+       <TextField fx:id="chatTextField" layoutX="18.0" layoutY="555.0" prefHeight="34.0" prefWidth="407.0" />
+       <Button fx:id="clearButton" disable="true" layoutX="443.0" layoutY="18.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="80.0" text="Clear" />
+       <Button fx:id="gameActionButton" disable="true" layoutX="18.0" layoutY="16.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="118.0" text="Game start" />
+       <Slider fx:id="lineWidth" disable="true" layoutX="147.0" layoutY="28.0" prefHeight="14.0" prefWidth="80.0" />
+       <ChoiceBox fx:id="colorChoiceBox" disable="true" layoutX="239.0" layoutY="18.0" prefHeight="34.0" prefWidth="88.0" />
+       <Button fx:id="eraseButton" disable="true" layoutX="345.0" layoutY="18.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="80.0" text="Erase" />
+   </children>
+</AnchorPane>

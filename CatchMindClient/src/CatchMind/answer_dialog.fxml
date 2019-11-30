@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="178.0" prefWidth="249.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="CatchMind.Answer">
+   <children>
+      <Label layoutX="24.0" layoutY="27.0" style="-fx-font-size: 14pt;" text="Please Enter the word." />
+      <TextField fx:id="answerTextField" layoutX="24.0" layoutY="66.0" prefHeight="30.0" prefWidth="201.0" style="-fx-font-size: 12pt;" />
+      <Button fx:id="okButton" layoutX="138.0" layoutY="121.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="87.0" text="OK" />
+   </children>
+</AnchorPane>
